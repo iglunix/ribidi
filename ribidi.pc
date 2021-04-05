@@ -1,0 +1,9 @@
+prefix=/usr
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: RiBiDi
+Description: Unicode Bidirectional Algorithm Library
+Version: 1.0.10
+Libs: -L${libdir} -lribidi
+Cflags:-I${includedir}/ribidi
