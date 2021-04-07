@@ -64,3 +64,10 @@ FriBidiLevel fribidi_reorder_line(
 	FriBidiChar *,
 	FriBidiStrIndex *
 );
+
+void fribidi_join_arabic(
+	FriBidiCharType const *,
+	FriBidiStrIndex,
+	FriBidiLevel const *,
+	FriBidiArabicProp *
+);
