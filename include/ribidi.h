@@ -9,6 +9,12 @@
 #define FRIBIDI_MINOR_VERSION 0
 #define FRIBIDI_MICRO_VERSION 10
 
+/* always true because we don't implement anything */
+#define FRIBIDI_LEVEL_IS_RTL 1
+
+#define FRIBIDI_PAR_ON 'n'
+#define FRIBIDI_PAR_LTR 'L'
+
 typedef uint32_t FriBidiChar;
 typedef size_t FriBidiStrIndex;
 typedef bool fribidi_boolean;

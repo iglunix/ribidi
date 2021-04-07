@@ -35,7 +35,7 @@ pub extern "C" fn fribidi_get_bidi_type(c: u32) -> usize {
         // BidiClass::D => '+',
         // BidiClass::C => '-',
         // BidiClass::T => '^',
-        BidiClass::L => '>',
+        BidiClass::L => 'L',
         // BidiClass::G => '~',
         BidiClass::B => 'B',
         BidiClass::S => 'S',
