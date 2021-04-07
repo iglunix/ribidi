@@ -40,6 +40,7 @@ fribidi_boolean fribidi_log2vis(
 );
 
 FriBidiBracketType fribidi_get_bracket(FriBidiChar);
+void fribidi_get_bracket_types(FriBidiChar const *, FriBidiStrIndex, FriBidiCharType const *, FriBidiBracketType *);
 FriBidiLevel fribidi_get_par_embedding_levels_ex(
 	FriBidiCharType const *,
 	FriBidiBracketType const *,
