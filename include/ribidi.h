@@ -2,6 +2,13 @@
 #include <stddef.h>
 #include <stdbool.h>
 
+#define FRIBIDI "ribidi"
+#define FRIBIDI_NAME "Iglunix RiBidi"
+#define FRIBIDI_VERSION "1.0.10"
+#define FRIBIDI_MAJOR_VERSION 1
+#define FRIBIDI_MINOR_VERSION 0
+#define FRIBIDI_MICRO_VERSION 10
+
 typedef uint32_t FriBidiChar;
 typedef size_t FriBidiStrIndex;
 typedef bool fribidi_boolean;
