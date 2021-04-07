@@ -10,7 +10,7 @@
 #define FRIBIDI_MICRO_VERSION 10
 
 /* always true because we don't implement anything */
-#define FRIBIDI_LEVEL_IS_RTL 1
+#define FRIBIDI_LEVEL_IS_RTL(level) 1
 
 #define FRIBIDI_PAR_ON 'n'
 #define FRIBIDI_PAR_LTR 'L'
