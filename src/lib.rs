@@ -198,3 +198,14 @@ pub extern "C" fn fribidi_reorder_line(
     }
     1
 }
+
+#[no_mangle]
+pub extern "C" fribidi_shape(
+    flags: u32,
+    levels: *const u32,
+    len: usize,
+    ar_props: *mut usize,
+    string: *mut u32
+) {
+
+}

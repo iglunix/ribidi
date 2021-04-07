@@ -15,6 +15,9 @@
 #define FRIBIDI_PAR_ON 'n'
 #define FRIBIDI_PAR_LTR 'L'
 
+#define FRIBIDI_FLAGS_DEFAULT 0
+#define FRIBIDI_FLAGS_ARABIC 0
+
 typedef uint32_t FriBidiChar;
 typedef size_t FriBidiStrIndex;
 typedef bool fribidi_boolean;
@@ -70,4 +73,12 @@ void fribidi_join_arabic(
 	FriBidiStrIndex,
 	FriBidiLevel const *,
 	FriBidiArabicProp *
+);
+
+void fribidi_shape(
+	FriBidiFlags,
+	FriBidiLevel const *,
+	FriBidiStrIndex,
+	FriBidiArabicProp *,
+	FriBidiChar *
 );
