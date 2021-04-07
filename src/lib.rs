@@ -179,6 +179,7 @@ pub extern "C" fn fribidi_join_arabic(
 #[no_mangle]
 pub extern "C" fn fribidi_reorder_line(
     flags: u32,
+    types: *const u32,
     len: usize,
     off: usize,
     base_dir: *const u32,

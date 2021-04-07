@@ -56,6 +56,7 @@ void fribidi_get_joining_types(FriBidiChar const *, FriBidiStrIndex, FriBidiJoin
 
 FriBidiLevel fribidi_reorder_line(
 	FriBidiFlags,
+	FriBidiCharType const *,
 	FriBidiStrIndex,
 	FriBidiStrIndex,
 	FriBidiParType const *,
