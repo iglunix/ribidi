@@ -24,6 +24,7 @@ typedef FriBidiChar FriBidiBracketType;
 typedef uint32_t FriBidiParType;
 typedef size_t FriBidiJoiningType;
 typedef size_t FriBidiArabicProp;
+typedef uint32_t FriBidiFlags;
 
 FriBidiCharType fribidi_get_bidi_type(FriBidiChar);
 void fribidi_get_bidi_types(FriBidiChar *, FriBidiStrIndex, FriBidiCharType *);
@@ -52,3 +53,13 @@ FriBidiLevel fribidi_get_par_embedding_levels_ex(
 
 FriBidiJoiningType fribidi_get_joining_type(FriBidiChar);
 void fribidi_get_joining_types(FriBidiChar const *, FriBidiStrIndex, FriBidiJoiningType *);
+
+FriBidiLevel fribidi_reorder_line(
+	FriBidiFlags,
+	FriBidiStrIndex,
+	FriBidiStrIndex,
+	FriBidiParType const *,
+	FriBidiLevel *,
+	FriBidiChar *,
+	FriBidiStrIndex *
+);

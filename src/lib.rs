@@ -175,3 +175,25 @@ pub extern "C" fn fribidi_join_arabic(
         }
     }
 }
+
+#[no_mangle]
+pub extern "C" fn fribidi_reorder_line(
+    flags: u32,
+    len: usize,
+    off: usize,
+    base_dir: *const u32,
+    embedding_levels: *mut u32,
+    visual_str: *mut u32,
+    map: *mut usize
+) -> u32 {
+    for (i, c) in unsafe {
+        std::slice::from_raw_parts(visual_str.offset(off as isize), len).iter().enumerate()
+    } {
+        unsafe {
+            if map != std::ptr::null_mut() {
+                *map.offset(i as isize) = i;
+            }
+        }
+    }
+    1
+}
